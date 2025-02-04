@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.message-bubble {
+    transition: all 0.3s ease;
+}
+
+.message-bubble:hover {
+    transform: translateY(-2px);
+}
+
+.typing-dot {
+    animation: typing 1s infinite;
+}
+
+@keyframes typing {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.emoji-grid-item {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.emoji-grid-item:hover {
+    transform: scale(1.2);
+    background-color: #f3f4f6;
+}
+
+.message-own {
+    background: linear-gradient(to right, #6366f1, #8b5cf6);
+    color: white;
+    margin-left: auto;
+}
+
+.message-other {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.tab-button {
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7d2fe;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #818cf8;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        flex-direction: column;
+    }
+    
+    .users-list {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .chat-main {
+        width: 100%;
+    }
+}
